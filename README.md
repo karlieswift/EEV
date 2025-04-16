@@ -7,6 +7,7 @@ Below is the architecture diagram of the project:
 
 ![Architecture Diagram](./figs/EEVflowchart.png)
 
+
 This project is the core code for EEV (Energy Entropy Visualization). Currently, the core algorithm part has been uploaded. After the paper is accepted, we will further update the data preprocessing section and the algorithm-related content.
 
 ## Usage

@@ -1,5 +1,14 @@
 """
 @Env: /anaconda3/python3.11
+@Time: 2025/4/16-10:34
+@Auth: karlieswift
+@File: cnv.py
+@Desc: 
+"""
+
+
+"""
+@Env: /anaconda3/python3.11
 @Time: 2025/4/16-10:33
 @Auth: karlieswift
 @File: nv.py
@@ -81,11 +90,18 @@ def calculate_NV_12(sequence):
     return NV_12
 
 
+def calculate_NV_18(sequence):
+    n, mu, D2 = calculate_values(sequence)
+    NV_8 = list(n.values()) + list(mu.values())  # NV_8 = [nA, nG, nC, nT, muA, muG, muC, muT]
+    NV_12 = NV_8 + list(D2.values())  # D2_4 = [D2A, D2G, D2C, D2T]
+    NV_6 = calculate_covariance(sequence, mu, n)
+    NV_18 = NV_12 + NV_6
+    return [float( i) for i in NV_18]
 
 
 if __name__ == '__main__':
     seq = 'AGCTAAGA'
 
-    print(len(calculate_NV_12(seq)))
+    print(len(calculate_NV_18(seq)))
     # print(len(entropy_markov_all(seq)))
     # print(joint_entropy(seq))

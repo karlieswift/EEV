@@ -87,7 +87,7 @@ class EnergyEntropy():
         data_type_dict = {
             "dna": 'ACGT',
             "protein": 'ACDEFGHIKLMNPQRSTVWY',
-            "RNA": 'ACGU',
+            "rna": 'ACGU',
         }
         return data_type_dict.get(data_type.lower())
 

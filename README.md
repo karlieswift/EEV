@@ -59,4 +59,19 @@ python usage.py
 - **RNA Sequence**: The RNA sequence is passed into the `EnergyEntropy` class, which converts it into a vector and prints it out.
 
 By following these steps, you can run the core algorithms of the `EEV` project and view the vectorization results for DNA, protein, and RNA sequences.
- 
+
+
+## Citation
+```
+@article{wang2025energy,
+  title={Energy entropy vector: a novel approach for efficient microbial genomic sequence analysis and classification},
+  author={Wang, Hao and Hu, Guoqing and Yau, Stephen ST},
+  journal={Briefings in Bioinformatics},
+  volume={26},
+  number={5},
+  pages={bbaf459},
+  year={2025},
+  publisher={Oxford University Press}
+}
+
+```

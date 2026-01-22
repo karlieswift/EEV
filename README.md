@@ -73,5 +73,4 @@ By following these steps, you can run the core algorithms of the `EEV` project a
   year={2025},
   publisher={Oxford University Press}
 }
-
 ```
